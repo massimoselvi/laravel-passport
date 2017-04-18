@@ -16,8 +16,8 @@
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
-            'csrfToken' => csrf_token(),
-        ]); ?>
+	'csrfToken' => csrf_token(),
+]); ?>
     </script>
 </head>
 <body>
@@ -43,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        <li><a href="{{ route('oauth2') }}">OAuth2</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -82,6 +82,12 @@
     </div>
 
     <!-- Scripts -->
+
+    <!-- Sentry JS SDK 2.1.+ required -->
+    <script src="https://cdn.ravenjs.com/3.3.0/raven.min.js"></script>
+
     <script src="/js/app.js"></script>
+
+
 </body>
 </html>

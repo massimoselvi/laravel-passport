@@ -15,21 +15,14 @@ require('./bootstrap');
 
 Vue.component('example', require('./components/Example.vue'));
 
-Vue.component(
-    'passport-clients',
-    require('./components/passport/Clients.vue')
-);
+Vue.component('passport-clients',require('./components/passport/Clients.vue'));
 
-Vue.component(
-    'passport-authorized-clients',
-    require('./components/passport/AuthorizedClients.vue')
-);
+Vue.component('passport-authorized-clients',require('./components/passport/AuthorizedClients.vue'));
 
-Vue.component(
-    'passport-personal-access-tokens',
-    require('./components/passport/PersonalAccessTokens.vue')
-);
+Vue.component('passport-personal-access-tokens',require('./components/passport/PersonalAccessTokens.vue'));
 
 const app = new Vue({
     el: '#app'
 });
+
+Raven.config('https://a183e6bf2e6b4b4bb3b81b3b3afcbea9@sentry.io/150523').install()
