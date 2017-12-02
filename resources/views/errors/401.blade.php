@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>500: Be right back.</title>
+        <title>401: not authorized!</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -41,7 +41,7 @@
         <div class="container">
 
             <div class="content">
-                <div class="title">500: Something went wrong.</div>
+                <div class="title">401: not authorized!</div>
                 @unless(empty($sentryID))
                     <!-- Sentry JS SDK 2.1.+ required -->
                     <script src="https://cdn.ravenjs.com/3.3.0/raven.min.js"></script>
